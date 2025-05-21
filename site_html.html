@@ -1,0 +1,147 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <!-- Meta tags for character set and viewport settings -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Title of the webpage that appears on the browser tab -->
+        <title>MacroPulse AI</title>
+        <style>
+            /* Basic CSS styles for the page */
+            body {
+                font-family: Arial, sans-serif; /* Sets font style for the body */
+                background-color: #f4f4f4; /* Light grey background color */
+                color: #333; /* Dark grey text color */
+                margin: 0; /* Removes margin around the page */
+                padding: 0; /* Removes padding */
+            }
+
+            /* Header style */
+            header {
+                background-color: #333; /* Dark background for header */
+                color: white; /* White text color */
+                padding: 20px 0; /* Vertical padding */
+                text-align: center; /* Centers the text */
+            }
+
+            /* Main content style */
+            main {
+                padding: 20px; /* Adds padding around the content */
+            }
+
+            /* Default hidden section style */
+            .section {
+                display: none; /* Initially hides all sections */
+                margin-top: 20px; /* Adds space above sections */
+            }
+
+            /* Image style */
+            img {
+                width: 30%; /* Makes the image fill the width of its container */
+                height: auto; /* Maintains the aspect ratio of the image */
+            }
+
+            /* Footer style */
+            footer {
+                background-color: #333; /* Dark footer background */
+                color: white; /* White text */
+                text-align: center; /* Centers the footer text */
+                padding: 10px 0; /* Padding around footer */
+                position: fixed; /* Fixes the footer at the bottom */
+                width: 100%; /* Makes the footer span the entire width */
+                bottom: 0; /* Positions the footer at the bottom */
+            }
+
+            /* Button style */
+            .button {
+                background-color: #4CAF50; /* Green background for buttons */
+                color: white; /* White text */
+                padding: 10px 20px; /* Padding inside the button */
+                font-size: 16px; /* Font size of the button text */
+                border: none; /* No border for the button */
+                cursor: pointer; /* Changes the cursor to pointer on hover */
+                margin: 10px; /* Adds space between buttons */
+            }
+
+            /* Button hover effect */
+            .button:hover {
+                background-color: #45a049; /* Darker green when hovering over the button */
+            }
+        </style>
+    </head>
+    <body>
+
+        <!-- Header section with the main title of the webpage -->
+        <header>
+            <h1>MacroPulse AI</h1> <!-- Main header -->
+            <p>The Future of Economic Intelligence Starts Here.</p> <!-- Subtitle -->
+        </header>
+
+        <!-- Main content area -->
+        <main>
+            <!-- Buttons for each section -->
+            <button class="button" onclick="showSection('ai-analysis')">AI-Powered Economic Analysis</button>
+            <button class="button" onclick="showSection('macro-trends')">Real-Time Macro Trends</button>
+            <button class="button" onclick="showSection('actionable-insights')">Actionable Insights</button>
+            <button class="button" onclick="showSection('successful-examples')">Successful Examples</button>
+
+            <!-- Section for AI-Powered Economic Analysis -->
+            <div id="ai-analysis" class="section">
+                <img src="./imagens/fundo_de_tela.png" alt="AI-Powered Economic Analysis"> <!-- Image for this section -->
+                <p><strong>MacroPulse AI harnesses advanced artificial intelligence to extract valuable insights from unstructured economic data,</strong> 
+                including financial reports, news articles, and market signals. By analyzing vast amounts of text and numerical data in real 
+                time, our models detect hidden patterns, sentiment shifts, and emerging trends that impact the global economy. This automated 
+                approach eliminates manual inefficiencies, allowing businesses, investors, and policymakers to make data-driven decisions 
+                with unparalleled accuracy and speed.</p>
+            </div>
+
+            <!-- Section for Real-Time Macro Trends -->
+            <div id="macro-trends" class="section">
+                <img src="./imagens/fundo_de_tela2.png" alt="Real-Time Macro Trends"> <!-- Image for this section -->
+                <p><strong>Economic conditions change rapidly, and staying ahead requires access to up-to-date information.</strong> MacroPulse AI continuously 
+                monitors key macroeconomic indicators—such as GDP growth, inflation, employment rates, and market sentiment—aggregating data 
+                from multiple sources to provide a comprehensive real-time view. With automated alerts, live dashboards, and AI-driven analysis, 
+                users can instantly respond to economic shifts, capitalize on opportunities, and mitigate potential risks.</p>
+            </div>
+
+            <!-- Section for Actionable Insights -->
+            <div id="actionable-insights" class="section">
+                <img src="./imagens/fundo_de_tela3.png" alt="Actionable Insights"> <!-- Image for this section -->
+                <p><strong>MacroPulse AI seamlessly integrates into existing financial and economic analysis workflows through API-ready solutions,</strong> 
+                enabling users to access real-time data directly within their preferred platforms. Whether incorporated into business intelligence 
+                tools, investment models, or policy research systems, our solution eliminates data silos and enhances collaboration. With a focus on 
+                flexibility and ease of use, professionals can leverage MacroPulse AI’s insights without requiring extensive technical expertise.</p>
+            </div>
+
+            <!-- Section for Successful Examples -->
+            <div id="successful-examples" class="section">
+                <img src="./imagens/fundo_de_tela4.png" alt="Successful Examples"> <!-- Image for this section -->
+                <p><strong>By applying machine learning and deep learning techniques, MacroPulse AI offers predictive analytics that forecast economic trends</strong> 
+                with high accuracy. Our models analyze historical data, real-time indicators, and external factors—such as geopolitical events and 
+                policy shifts—to identify early signals of economic changes. This proactive intelligence empowers businesses, investors, and policymakers 
+                to anticipate market fluctuations, optimize resource allocation, and make strategic decisions with confidence.</p>
+            </div>
+        </main>
+
+        <!-- Footer section -->
+        <footer>
+            <p>&copy; 2025 MacroPulse AI</p> <!-- Footer content with copyright -->
+        </footer>
+
+        <!-- JavaScript to show and hide sections based on button clicks -->
+        <script>
+            function showSection(sectionId) {
+                // Hide all sections
+                const sections = document.querySelectorAll('.section');
+                sections.forEach(section => section.style.display = 'none');
+
+                // Show the selected section
+                const selectedSection = document.getElementById(sectionId);
+                if (selectedSection) {
+                    selectedSection.style.display = 'block';
+                }
+            }
+        </script>
+
+    </body>
+    </html>

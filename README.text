@@ -1,0 +1,15 @@
+Estrutura 
+
+macro_pulse_ai
+│── main.py  # Arquivo principal com a navegação
+│── pages/   # Diretório para páginas separadas
+│   ├── about.py
+│   ├── cases.py
+│   ├── solutions.py
+│   ├── contact.py
+│   ├── articles.py
+│── assets/  # (Opcional) Para imagens, estilos, etc.
+│── data/    # (Opcional) Para armazenar datasets
+│── utils.py # (Opcional) Funções auxiliares
+
+
